@@ -1,0 +1,73 @@
+/* Сбрасываем отступы на HTML и body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Класс для заднего фона на странице about */
+.about-background {
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(234, 237, 161), rgb(147, 3, 169));
+    background-size: cover;
+    background-position: center;
+}
+
+/* Основной контейнер страницы */
+.about-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Полупрозрачный контейнер для текста */
+.about-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Черный цвет с прозрачностью */
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень */
+    max-width: 600px; /* Ограничение по ширине */
+    text-align: center;
+}
+
+/* Заголовок */
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Текстовое описание */
+.about-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #f0f0f0; /* Светло-серый для читаемости */
+}
+
+/* Кнопка */
+.about-button {
+    background-color: rgb(147, 3, 169);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-button:hover {
+    background-color: rgb(115, 2, 130);
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
+}
+
+.about-button:active {
+    transform: scale(0.95); /* Лёгкое сжатие при нажатии */
+}

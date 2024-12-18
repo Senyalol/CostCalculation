@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Фон страницы */
+.background {
+    background: linear-gradient(to bottom, rgb(234, 237, 161), rgb(147, 3, 169));
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Устанавливаем высоту для фона */
+}
+
+/* Основной контейнер страницы */
+.start-body {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    justify-content: space-between; /* Заголовок, карточки и футер */
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Контейнер для заголовка */
+.start-header {
+    text-align: center;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Черный полупрозрачный фон */
+    padding: 20px; /* Добавляем отступы */
+    border-radius: 10px; /* Скругляем углы */
+}
+
+/* Заголовок */
+.start-title {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255); /* Цвет текста белый для лучшей читаемости */
+    margin: 0;
+    text-shadow: none; /* Убираем тень */
+}
+
+/* Описание под заголовком */
+.start-description {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255); /* Цвет текста белый для лучшей читаемости */
+    margin-top: 10px;
+    max-width: 600px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Контейнер для карточек */
+.start-cards {
+    display: flex; /* Горизонтальное расположение карточек */
+    gap: 20px; /* Расстояние между карточками */
+    margin-top: 30px; /* Отступ от заголовка */
+}
+
+/* Карточка */
+.start-card {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.start-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(80, 0, 100);
+}
+
+.start-card p {
+    font-size: 1rem;
+    color: rgb(60, 0, 90);
+    margin-top: 10px;
+}
+
+/* Футер */
+.start-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0.8;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Футер будет внизу страницы */
+    padding: 10px 0;
+}
+.home-button {
+    margin-top: 250px; /* Отступ сверху */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white; /* Цвет текста */
+    border: none; /* Убрать границу */
+    border-radius: 5px; /* Закруглённые углы */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.home-button:hover {
+    background-color: #c653ff; /* Цвет фона при наведении */
+}
